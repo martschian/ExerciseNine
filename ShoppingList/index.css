@@ -1,0 +1,9 @@
+.done {
+  background-color: lightsteelblue;
+  text-decoration: line-through;
+}
+
+li {
+  display: flex !important;
+  justify-content: space-between;
+}
