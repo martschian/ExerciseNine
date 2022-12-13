@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bish-Bosh 2.0</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Bish-Bosh 2.0</h1>
+    </header>
+    <main>
+      <p>Bish-Bosh listar alla tal mellan 1 och 100, men vissa undantag: Om talet är jämnt delbart med 3 listas
+        <span>Bish</span> istället för talet. Om talet är jämnt delbart med 4 lista <span>Bosh</span> istället för
+        talet. Om talet är jämnt delbart med både med 3 och 4 skrivs <span>Bish-Bosh</span> istället för talet.
+      </p>
+
+      <p>
+        I version 2.0 kan ni själv välja värden för <span>Bish</span> och <span>Bosh</span>, samt för hur långt loopen
+        ska gå.
+      </p>
+
+      <form>
+        <label for="bish">Bish:</label>
+        <input type="number" min="1" max="10" step="1" name="bish" id="bish" value="3" required>
+        <label for="bosh">Bosh:</label>
+        <input type="number" min="1" max="10" step="1" name="bosh" id="bosh" value="4" required>
+        <label for="loops">Loopa till:</label>
+        <input type="number" min="10" max="1000" step="10" name="loops" id="loops" value="100" required>
+        <button type="submit">Go!</button>
+      </form>
+    </main>
+    <div id="output"></div>
+    <footer>&copy; 2022 Håkan Hellgren</footer>
+    <script type="module" src="index.js"></script>
+  </body>
+
+</html>

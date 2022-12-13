@@ -1,0 +1,12 @@
+p span {
+  text-transform: uppercase;
+  background-color: #585858;
+  color: #eee;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 0.3em;
+}
+footer {
+  text-align: center;
+  margin: 10px auto;
+}
